@@ -1,0 +1,82 @@
+.listviewpivotitem.win-pivot-item .win-pivot-item-content {
+    /* Stretch across the whole width of the screen so the whole thing is pannable.*/
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.win-listview {
+    height: 100%;
+}
+
+#pivotScenario3 .win-listview .win-container {
+    margin: 0;
+    padding: 0 0 20px 0;
+}
+
+#pivotScenario3 .win-listview .win-item {
+    margin: 0 20px 0 0;
+    width: calc(100% - 20px);
+}
+
+#pivotScenario3 .win-listview.win-rtl .win-item {
+    margin: 0 0 0 20px;
+}
+
+/* Mail item template CSS */
+.mailItem h2 {
+    line-height: 1.3;
+}
+
+.mailItem h5 {
+    font-size: 12pt;
+}
+
+.mailItem {
+    display: -ms-grid;
+    -ms-grid-columns: 0 1fr 60px;
+    -ms-grid-rows: auto auto auto;
+    padding-left:20px;
+}
+
+.author {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.mailItem .authorRoot {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
+.mailItem .title {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    font-weight: 500;
+    margin-top: -4px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.mailItem .previewText {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    margin-top: -4px;
+    /* 255 * 0.6 = 153 */
+    color: rgb(153,153,153);
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.mailItem .time {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-row-align: end;
+    -ms-grid-column-align: end;
+    margin-bottom: 4px;
+    font-weight: 300;
+}
+
+
