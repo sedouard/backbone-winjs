@@ -13,7 +13,8 @@
             titleColor: "rgba(212, 14, 136, 1)",
             title: "Not specified",
             previewText: "Not specified",
-            time: "Not specified"
+            time: "Not specified",
+            read: false
         },
         initialize: function(){
             console.log("initialized the email model");
@@ -36,7 +37,7 @@
             
             //create a data collection that will be used to back the WinJS view:
             //we use static data here, however you can easily use a REST api to attach the model to your server
-            var email1 = new EmailModel({ author: "Michael Wilson", titleColor: "rgba(212, 14, 136, 1)", title: "QuickStart's and How To's", previewText: "More information on how to use WinJS controls", time: "1:17p" });
+            var email1 = new EmailModel({ author: "Michael Wilson", titleColor: "rgba(212, 14, 136, 1)", title: "QuickStart's and How To's", previewText: "More information on how to use WinJS controls", time: "1:17p", read: true });
             var email2 = new EmailModel({ author: "James Edouard", titleColor: "rgba(212, 14, 136, 1)", title: "Dinner?", previewText: "Where's dinner?", time: "12:28p" });
             var email3 = new EmailModel({ author: "Gary Paul", titleColor: "rgba(212, 14, 136, 1)", title: "Going out saturday", previewText: "Jean and I are leaving...", time: "12:28p" });
             
